@@ -1,6 +1,8 @@
 .Forecast forecast {
   display: flex;
   flex-direction: row;
+  list-style: none;
+  color: black;
 }
 
 .Forecast forecast-list {

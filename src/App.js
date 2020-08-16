@@ -3,6 +3,7 @@ import Search from "./Search";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
 import "./App.css";
+import "./Forecast.css";
 
 function App() {
   return (
