@@ -1,0 +1,12 @@
+.Forecast forecast {
+  display: flex;
+  flex-direction: row;
+}
+
+.Forecast forecast-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}

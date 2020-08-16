@@ -1,12 +1,22 @@
 import React from "react";
-import axios from "axios";
 
 export default function Weather(props) {
-  function handleResponse(response) {
-    alert(
-      "The weather in ${response.data.name} is ${response.data.main.temp}°C"
+  let temp = Math.round(props.temperature);
+  let humid = Math.round(props.humidity);
+  let descript = props.description;
+  let wind = Math.round(props.wind);
+  let icon = `http://openweathermap.org/img/wn/${props.icon}.png`;
+  if (temp) {
+    return (
+      <div className="Weather">
+        <p>Temperature: {temp}°C</p>
+        <p>Description: {descript}</p>
+        <p>Humidity: {humid}%</p>
+        <p>Wind: {wind}km/h</p>
+        <img src={icon} alt={descript} />
+      </div>
     );
+  } else {
+    return "";
   }
-  let apiKey = `1f29a8457a11c97a01e380819aae6d53`;
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
 }
