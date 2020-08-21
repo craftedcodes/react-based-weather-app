@@ -13,6 +13,7 @@ function App() {
       <City />
       <CurrentWeather />
       <Weather />
+      <br />
       <Forecast />
     </div>
   );

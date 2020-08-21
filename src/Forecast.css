@@ -1,12 +1,13 @@
-.forecast {
+div {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   justify-items: center;
+  align-self: center;
   color: black;
 }
-.forecast-list {
+ul {
   display: flex;
   flex-direction: column;
   text-align: center;

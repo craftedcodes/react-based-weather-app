@@ -4,9 +4,10 @@
   text-align: center;
   justify-content: center;
   justify-items: center;
+  align-self: center;
   border: solid 1px black;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin: 0auto;
+  margin: 3auto;
 }
