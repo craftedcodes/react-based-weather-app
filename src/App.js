@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import Forecast from "./Forecast";
 import CurrentWeather from "./CurrentWeather";
 import City from "./City";
+import Source from "./Source";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Weather />
       <br />
       <Forecast />
+      <Source />
     </div>
   );
 }
