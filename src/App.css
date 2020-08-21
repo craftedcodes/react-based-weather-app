@@ -1,10 +1,17 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 500px;
+  min-height: 400px;
+  max-height: 600px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 2%;
 }
 
 .App-header {
