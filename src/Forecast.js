@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
-import Weather from "./Weather";
-import Search from "./Search";
-import CurrentWeather from "./CurrentWeather";
+import React from "react";
+
 import "./Forecast.css";
 
 export default function Forecast() {
