@@ -1,5 +1,4 @@
 import React from "react";
-import City from "./City";
 import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
 import ForecastPreview from "./ForecastPreview";
@@ -12,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Search />
-      <City />
       <CurrentWeather />
       <Weather />
       <br />
