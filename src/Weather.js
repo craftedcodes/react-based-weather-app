@@ -8,7 +8,7 @@ export default function Weather(props) {
   let icon = `http://openweathermap.org/img/wn/${props.icon}.png`;
   if (temp) {
     return (
-      <div className="Weather">
+      <div>
         <p>Temperature: {temp}°C</p>
         <p>Description: {descript}</p>
         <p>Humidity: {humid}%</p>
