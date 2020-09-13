@@ -1,11 +1,13 @@
 import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
   let temp = Math.round(props.temperature);
   let humid = Math.round(props.humidity);
   let descript = props.description;
   let wind = Math.round(props.wind);
-  let icon = `http://openweathermap.org/img/wn/${props.icon}.png`;
+  let icon = WeatherIcon;
   if (temp) {
     return (
       <div>

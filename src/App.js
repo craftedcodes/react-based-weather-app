@@ -14,8 +14,7 @@ function App() {
       <Weather defaultCity="Berlin" />
       <WeatherConversion />
       <br />
-      <Forecast />
-      <ForecastPreview />
+      <Forecast city="Berlin" />
       <br />
       <Source />
     </div>
