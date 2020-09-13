@@ -33,6 +33,7 @@ export default function Search() {
         <input type="search" className="search-field" onChange={handleChange} />
         <input type="submit" placeholder="Search" className="submit-field" />
       </form>
+      <br />
       <Weather
         temperature={weather.temp}
         humidity={weather.humid}

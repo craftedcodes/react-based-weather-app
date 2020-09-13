@@ -5,11 +5,14 @@
   max-width: 500px;
   min-height: 400px;
   max-height: 600px;
-  border: solid 1px black;
+  border: solid 1px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   justify-items: center;
+  border-color: #d1d9e6;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff;
+  background-color: #f9f9f9;
 }
