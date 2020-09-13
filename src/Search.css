@@ -1,6 +1,21 @@
 .Search {
+  display: flex;
+  flex-direction: row;
+  height: 3%;
+  margin: 0auto;
+}
+
+.search-field {
+  border-color: #d1d9e6;
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+  border: solid 1px;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+.submit-field {
   border-color: #d1d9e6;
   box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff;
   border: solid 1px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
