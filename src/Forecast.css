@@ -7,6 +7,11 @@ div {
   align-self: center;
   color: #2a354f;
 }
+canvas {
+  margin-top: 5px;
+  margin: 10px auto;
+  display: block;
+}
 ul {
   display: flex;
   flex-direction: column;
