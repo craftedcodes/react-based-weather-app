@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   height: 3%;
-  margin: 0auto;
+  margin: 0px auto;
 }
 
 .search-field {
