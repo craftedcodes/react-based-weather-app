@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Search />
-      <Weather />
+      <Weather defaultCity="Berlin" />
       <WeatherConversion />
       <br />
       <Forecast />
