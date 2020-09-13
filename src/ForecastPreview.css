@@ -1,5 +1,8 @@
-canvas {
+.ForecastPreview {
   margin-top: 5px;
   margin: 10px auto;
   display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
