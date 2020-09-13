@@ -1,9 +1,8 @@
 .Weather {
   font-family: sans-serif;
   padding: 16px;
-  border-color: #d1d9e6;
   box-shadow: 6px 6px 20px #5ca1d5, -6px -6px 20px #d76c4b;
-  border: solid 1px;
+  border: linear-gradient(145deg, #ac310c 0%, #095fa1 100%) solid 1px;
   border-radius: 50%;
   width: 500px;
   height: 500px;

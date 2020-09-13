@@ -1,6 +1,7 @@
 .ForecastPreview {
   margin-top: 5px;
   margin: 10px auto;
+  margin-right: 3%;
   display: block;
   display: flex;
   flex-direction: column;
