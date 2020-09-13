@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import WeatherIcon from "./WeatherIcon";
 import Search from "./Search";
+import WeatherConversion from "./WeatherConversion";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -40,6 +42,10 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <Search />
+        <br />
+        <WeatherConversion />
+        <br />
+        <WeatherIcon />
       </div>
     );
   } else {
