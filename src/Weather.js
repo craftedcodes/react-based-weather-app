@@ -4,12 +4,12 @@ import "./Weather.css";
 import WeatherIcon from "./WeatherIcon";
 import Search from "./Search";
 import WeatherConversion from "./WeatherConversion";
-
+​
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   const [units, setUnits] = useState("metric");
-
+​
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -22,26 +22,29 @@ export default function Weather(props) {
       city: response.data.name,
     });
   }
-
+​
   function search() {
     const apiKey = "1f29a8457a11c97a01e380819aae6d53";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
-
+​
   function handleSubmit(event) {
     event.preventDefault();
     search();
   }
-
+​
   function handleCityChange(event) {
     setCity(event.target.value);
   }
-
+​
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <Search />
+        <Search
+          handleCityChange={handleCityChange}
+          handleSubmit={handleSubmit}
+        />
         <br />
         <WeatherConversion />
         <br />
