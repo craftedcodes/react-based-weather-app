@@ -40,7 +40,7 @@ export default function Weather(props) {
           handleSubmit={handleSubmit}
         />
         <br />
-        <WeatherConversion />
+        <WeatherConversion data={weatherData} />
         <br />
         <WeatherIcon />
       </div>
