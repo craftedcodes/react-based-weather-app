@@ -35,18 +35,24 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <Search
-          handleCityChange={handleCityChange}
-          handleSubmit={handleSubmit}
-        />
-        <br />
-        <WeatherConversion data={weatherData} />
-        <br />
-        <WeatherIcon />
+        <ul>
+          <li>
+            <Search
+              handleCityChange={handleCityChange}
+              handleSubmit={handleSubmit}
+            />
+          </li>
+          <li>
+            <WeatherConversion data={weatherData} />
+          </li>
+          <li>
+            <WeatherIcon />
+          </li>
+        </ul>
       </div>
     );
   } else {
     search();
-    return "Type a city";
+    return <WeatherIcon />;
   }
 }
