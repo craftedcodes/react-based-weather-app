@@ -10,9 +10,7 @@ export default function Source() {
       >
         Open source
       </a>
-      <br />
       <span> crafted by </span>
-      <br />
       <a href="https://crafted-codes.netlify.app/" target="_blank">
         Lea Schumacher
       </a>

@@ -11,6 +11,9 @@ a {
   font-size: 6px;
   color: #2a354f;
   text-decoration: none;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 3%;
 }
 
 span {
