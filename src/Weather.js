@@ -45,8 +45,8 @@ export default function Weather(props) {
           <li>
             <WeatherConversion data={weatherData} />
           </li>
-          <li>
-            <WeatherIcon />
+          <li className="Icon">
+            <WeatherIcon code={weatherData.icon} size={120} />
           </li>
         </ul>
       </div>
