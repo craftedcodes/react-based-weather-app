@@ -42,11 +42,9 @@ export default function Weather(props) {
               handleSubmit={handleSubmit}
             />
           </li>
+          <li className="City">{weatherData.city}</li>
           <li>
-            <data={(city)} />
-          </li>
-          <li>
-            <WeatherConversion data={(weatherData)} />
+            <WeatherConversion data={weatherData} />
           </li>
           <li>
             <WeatherIcon code={weatherData.icon} size={120} />
