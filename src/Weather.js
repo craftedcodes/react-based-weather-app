@@ -3,6 +3,8 @@ import axios from "axios";
 import "./Weather.css";
 import WeatherIcon from "./WeatherIcon";
 import Search from "./Search";
+
+import Forecast from "./Forecast";
 import WeatherConversion from "./WeatherConversion";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -48,6 +50,9 @@ export default function Weather(props) {
           </li>
           <li>
             <WeatherIcon code={weatherData.icon} size={120} />
+          </li>
+          <li>
+            <Forecast city="Berlin" />
           </li>
         </ul>
       </div>
