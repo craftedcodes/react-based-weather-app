@@ -9,8 +9,6 @@ function App() {
     <div className="App">
       <Weather defaultCity="Berlin" />
       <br />
-      <Forecast city="Berlin" />
-      <br />
       <Source />
     </div>
   );
