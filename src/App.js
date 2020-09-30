@@ -1,5 +1,4 @@
 import React from "react";
-import Forecast from "./Forecast";
 import Source from "./Source";
 import Weather from "./Weather";
 import "./App.css";
