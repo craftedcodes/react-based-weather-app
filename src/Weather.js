@@ -37,24 +37,30 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div>
-        <div className="Weather">
-          <ul>
-            <li>
-              <Search
-                handleCityChange={handleCityChange}
-                handleSubmit={handleSubmit}
-              />
-            </li>
-            <li className="City">{weatherData.city}</li>
-            <li>
-              <WeatherConversion data={weatherData} />
-            </li>
-            <li>
-              <WeatherIcon code={weatherData.icon} size={120} />
-            </li>
-          </ul>
-        </div>
-        <Forecast code={weatherData.city} />
+        <ul>
+          <li className="Circle">
+            <div className="Weather">
+              <ul className="InnerCircle">
+                <li className="Data">
+                  <Search
+                    handleCityChange={handleCityChange}
+                    handleSubmit={handleSubmit}
+                  />
+                </li>
+                <li className="City Data">{weatherData.city}</li>
+                <li className="Data">
+                  <WeatherConversion data={weatherData} />
+                </li>
+                <li className="Data">
+                  <WeatherIcon code={weatherData.icon} size={120} />
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="Forecast">
+            <Forecast city={weatherData.city} />
+          </li>
+        </ul>
       </div>
     );
   } else {

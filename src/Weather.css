@@ -10,18 +10,33 @@
 }
 
 ul {
-  margin-top: 20%;
+  margin-right: 9%;
+}
+
+ul.InnerCircle {
+  margin-top: 25%;
 }
 
 li {
-  margin-right: 15%;
   margin-top: 5%;
   list-style: none;
+}
+
+li.Data {
+  margin: 0 auto;
 }
 
 .City {
   font-size: 60px;
   font-weight: bold;
+}
+
+ul.Circle {
+  margin-right: 40%;
+}
+
+.Forecast {
+  margin-left: 15%;
 }
 
 .Weather .temperature {
