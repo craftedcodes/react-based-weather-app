@@ -51,9 +51,6 @@ export default function Weather(props) {
           <li>
             <WeatherIcon code={weatherData.icon} size={120} />
           </li>
-          <li>
-            <Forecast city="Berlin" />
-          </li>
         </ul>
       </div>
     );
