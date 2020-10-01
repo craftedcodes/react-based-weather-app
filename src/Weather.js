@@ -65,6 +65,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return <WeatherIcon />;
+    return null;
   }
 }
