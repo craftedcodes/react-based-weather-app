@@ -9,7 +9,6 @@ import WeatherConversion from "./WeatherConversion";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
-  const [units, setUnits] = useState("metric");
   function handleResponse(response) {
     setWeatherData({
       ready: true,
